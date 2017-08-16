@@ -14,6 +14,7 @@ class Grafo {
 private:
     int tamanho;
     float** matrizAdj;
+    No *vertice;
     
 public:
     Grafo(int tamanho);//ja cria a matriz
@@ -21,6 +22,8 @@ public:
     void removeAdjacencia(int lin, int col);// bota valor como NULL
     void imprimeAdjacencia();//imprime a matriz
     int adjacentes(int linha, float v[]); //mostra o numero de adjacencias em cada linha
+    void setaInformacao();
+    void imprimeInformacao();
 };
 
 

@@ -14,13 +14,14 @@
 using namespace std;
 class No {
 private:
-    string* nome;
-    int tam;
+    string nome = "";
+    
+    
     
 public:
-    No(int tamanho);
-    void setaInformacao();
-    void imprimeInformacao();
+    No();
+    void addNome(string nm){this->nome = nm;};
+    string getNome(){return this->nome;};
 };
 
 #endif /* No_hpp */
